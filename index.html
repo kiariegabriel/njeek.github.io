@@ -1,411 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gabriel Kiarie</title>
-    <link rel="shortcut icon" href="assets/favicon.png">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="./css/all.css">
-
-
-    <!-- --------- Owl-Carousel ------------------->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-
-    <!-- ------------ AOS Library ------------------------- -->
-    <link rel="stylesheet" href="./css/aos.css">
-
-    <!-- Custom Style   -->
-    <link rel="stylesheet" href="./css/Style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 </head>
-
 <body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/img/favicon.png" alt="logo" width="25" height="25">
+        </a>
+        <div class="menuToggle"></div>
+    </header>
+    <ul class="navigation">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <li><a href="#blogs" onclick="toggleMenu();">Blogs</a></li>
+    </ul>
 
-    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    <!--Banner-->
+    <section class="banner" id="home">
+        <img src="assets/img/mount.jpg" alt="Cover" class="cover">
+        <div class="contentBx">
+            <h2>Homepage</h2>
+            <h4>Welcome. Let's Explore</h4>
+        </div>
+    </section>
 
-    <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="#" class="text-gray">Gabriel Kiarie</a>
+    <!--About-->
+    <section class="about" id="about">
+        <div class="title">
+            <h2>About</h2>
+        </div>
+        <div class="contentBx">
+            <div class="content">
+                <p>Gabriel Kiarie is ...
+                      
+                </p>
             </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
+            <div class="content">
+                <div class="imgBx">
+                    <img src="assets/img/passport.jpg" alt="cover" class="cover">
                 </div>
-            </div>
-            <div>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Blogs</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Publications</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social text-gray">
-                <a 
-                    href="https://twitter.com/_kiariegabriel" target="_blank"><i class="fab fa-twitter"></i>
-                </a>
-                <a 
-                    href="https://www.linkedin.com/in/gabriel-kiarie-156351131/" target="_blank"><i class="fab fa-linkedin-in"></i>
-                </a>
-                <a 
-                    href="https://github.com/kiariegabriel/" target="_blank"><i class="fab fa-github"></i>
-                </a>
-
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
-
-    <!----------------------------- Main Site Section ------------------------------>
-
-    <main>
-
-        <!------------------------ Site Title ---------------------->
-
-        <section class="site-title">
-            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-                <h3>Mount Kenya's Peak</h3>
-                <h1>Welcome To My Page</h1>
-                <button class="btn">Explore</button>
-            </div>
-        </section>
-
-        <!------------x----------- Site Title ----------x----------->
-
-        <!-- --------------------- Blog Carousel ----------------- -->
-
-        <section>
-            <div class="blog">
-                <div class="container">
-                    <div class="owl-carousel owl-theme blog-post">
-                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/posts/cloudy-sky-(320x294).jpg" alt="cloudy-sky" width="360" height="220">
-                            <div class="blog-title">
-                                <h3>The Indian Ocean Dipole</h3>
-                                <button class="btn btn-blog">Climate</button>
-                                <span>5 minutes</span>
-                            </div>
-                        </div>
-                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                            <img src="./assets/posts/grey-backed-spect(340x240).jpg" alt="grey-backed camaroptera-spectrogram" width="360" height="220">
-                            <div class="blog-title">
-                                <h3>Bioacoustics</h3>
-                                <button class="btn btn-blog">Conservation</button>
-                                <span>7 minutes</span>
-                            </div>
-                        </div>
-                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                            <img src="./assets/posts/sensor-lab(320x248).jpg" alt="DSAIL Bioacoustics System" width="360" height="220">
-                            <div class="blog-title">
-                                <h3>DSAIL Bioacoustics System</h3>
-                                <button class="btn btn-blog">Technology & Conservation</button>
-                                <span>7 minutes</span>
-                            </div>
-                        </div>
-                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/posts/power-board(245x320).jpg" alt="power-board" width="360" height="220">
-                            <div class="blog-title">
-                                <h3>Powering The Raspberry Pi</h3>
-                                <button class="btn btn-blog">Technology</button>
-                                <span>7 minutes</span>
-                            </div>
-                        </div>
+    <!-- Latest Blog Post-->
+    <section class="post" id="blogs">
+        <div class="title">
+            <h2>Blogs</h2>
+        </div>
+        <div class="contentBx">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="assets/img/cloudy-sky.jpg" alt="cover" class="cover">
                     </div>
-                    <div class="owl-navigation">
-                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
-                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    <div class="textBx">
+                        <h2>
+                            The Indian Ocean Dipole.
+                        </h2>
+                        <p>
+                            The Indian Ocean dipole plays a significant role in the 
+                            rainfall patterns of Eastern Africa and Australia. ...
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="assets/img/bioacoustics.jpg" alt="cover" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h2>
+                            DSAIL Bioacoustics System
+                        </h2>
+                        <p>
+                            Acoustic monitoring of ecosystems is a non-invasive 
+                            method of monitoring ecosystems. ...
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="assets/img/power-board.jpg" alt="cover" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h2>
+                            DSAIL Power Management Board
+                        </h2>
+                        <p>
+                            The Raspberry Pi is a single board computer
+                            that finds multiple applications among tech enthusiasts. ...
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="assets/img/female-red-collared-widowbird.jpg" alt="cover" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h2>
+                            Bioacoustics
+                        </h2>
+                        <p>
+                            Ecosystems degradation and climate change have greatly affected
+                            biodiversity. ...
+                        </p>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
             </div>
-        </section>
+        <div class="title">
+            <a href="blogs.html" class="btn mgt60">Load More</a>
+        </div>
+    </section>
 
-        <!-- ----------x---------- Blog Carousel --------x-------- -->
-
-        <!-- ---------------------- Site Content -------------------------->
-
-        <section class="container">
-            <div class="site-content">
-                <div class="posts">
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/posts/dkut-cloudy-sky(800x401).jpg" class="img" alt="cloudy-sky" width="750" height="400">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; Last updated on October 14, 2021</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Blogs</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button onclick="location.href='https://www.google.com'" class="btn post-btn">View Posts &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/posts/grey-backed-spect(800x533).jpg" class="img" alt="raspberrypi-bioacoustics" width="750" height="400">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; Last updated on December 16, 2020</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Publications</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button onclick="location.href='https://www.google.com'" class="btn post-btn">View Posts &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/posts/sensor-conservancy(768x1024).jpg" class="img" alt="raspberrypi-bioacoustics" width="750" height="400">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; Last updated on December 16, 2020</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Science</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button onclick="location.href='https://www.google.com'" class="btn post-btn">View Posts &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/posts/power-board(612x800).jpg" class="img" alt="raspberrypi-bioacoustics" width="750" height="400">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; Last updated on December 16, 2020</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Programming</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button onclick="location.href='https://www.google.com'" class="btn post-btn">View Posts &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <aside class="sidebar">
-                            
-                    <div class="popular-post">
-                        <h2>Popular Post</h2>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                    <span>0 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/posts/dkut-cloudy-sky(640x280).jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;October 14,
-                                        2021</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">The Indian Ocean Dipole and its Significance in the Rain Patterns of Eastern Africa and Australia.</a>
-                            </div>
-                        </div>
+        <!--Publications-->
+        <section class="--publications--" id="--publications--">
+            <div class="title">
+                <h2>--Publications--</h2>
+                <p > Raspberry Pi Based Recording System for Acoustic Monitoring of Bird Species (Conference paper)
+                    <a class="links" href="https://ieeexplore.ieee.org/abstract/document/9576984" target="_blank">[link]
                         
-                    </div>
-                    
-                </aside>
+                    </a>
+                </p>
+                <p > Raspberry Pi Based Recording System for Acoustic Monitoring of Bird Species (Technical report)
+                    <a class="fa fa-file-pdf-o" href="/assets/docs/Kiarie-DSAIL-2020-001.pdf">  
+                    </a>
+                </p>
             </div>
         </section>
 
-        <!-- -----------x---------- Site Content -------------x------------>
-
-    </main>
-
-    <!---------------x------------- Main Site Section ---------------x-------------->
-
-
-    <!-- --------------------------- Footer ---------------------------------------- -->
-
-    <footer class="footer">
-        <div class="container">
-            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
-                <h2>About</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
-                    iure, autem nulla tenetur repellendus.</p>
+    <!--Contact-->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>Contact</h2>
+            <p> Let us connect</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" name="" placeholder="First Name">
+                <input type="text" name="" placeholder="Last Name">
             </div>
-            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
-                <h2>Quick links</h2>
-                <p>
-                    <a href="https://www.dkut.ac.ke/">Dedan Kimathi University of Technology</a>
-                </p>
-                <p>
-                    <a href="https://www.dkut.ac.ke/">Centre for Data Science and Artificial Intelligence</a>
-                </p>
+            <div class="row">
+                <input type="text" name="" placeholder="Email Address">
+                <input type="text" name="" placeholder="Mobile No.">
             </div>
-            <div class="recent-posts" data-aos="fade-left" data-aos-delay="200">
-                <h2>Recent posts</h2>
-                <p>
-                    <a href="https://www.dkut.ac.ke/">The Indian Ocean dipole</a>
-                </p>
-                <p>
-                    <a href="https://www.dkut.ac.ke/">Powering the Raspberry Pi</a>
-                </p>
-                <p>
-                    <a href="https://www.dkut.ac.ke/">DSAIL Bioacoustics System</a>
-                </p>
-            </div>  
-            <div class="follow" data-aos="fade-left" data-aos-delay="200">
-                <h2>Let us be Social</h2>
-                <div>
-                    <a 
-                        href="https://twitter.com/_kiariegabriel" target="_blank"><i class="fab fa-twitter"></i>
-                    </a>
-                    <a 
-                        href="https://www.linkedin.com/in/gabriel-kiarie-156351131/" target="_blank"><i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a 
-                        href="https://github.com/kiariegabriel/" target="_blank"><i class="fab fa-github"></i>
-                    </a>
-                </div>
+            <div class="row2">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="row2">
+                <input type="submit" value="Send" class="btn">
             </div>
         </div>
-        <div class="rights flex-row">
-            <h4 class="text-gray">
-                Copyright © Gabriel Kiarie
-            </h4>
-        </div>
-        <div class="move-up">
-            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
-        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="quickLinks">Quick Links</a>
+        <ul class="footerMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#post">Post</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+
+        <a href="#" class="socialMedia">Let Us Socialize</a>
+        <ul class="mediaIcons">
+            
+    
+            <a href="https://www.linkedin.com/in/gabriel-kiarie-156351131/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/kiariegabriel/" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/__kiarie__" target="_blank"><i class="fa fa-twitter"></i></a>
+        </ul>
+
+        <a href="https://kiariegabriel.github.io" class="copyrightText">©kiariegabriel, 2022 </a>
     </footer>
 
-    <!-- -------------x------------- Footer --------------------x------------------- -->
 
-    <!-- Jquery Library file -->
-    <script src="./js/Jquery3.4.1.min.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
 
-    <!-- --------- Owl-Carousel js ------------------->
-    <script src="./js/owl.carousel.min.js"></script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
 
-    <!-- ------------ AOS js Library  ------------------------- -->
-    <script src="./js/aos.js"></script>
+        // closing navigation menu after clicking on a link
 
-    <!-- Custom Javascript file -->
-    <script src="./js/main.js"></script>
+        function toggleMenu(){
+            menuToggle.classList.remove('active');
+            navigation.classList.remove('active');
+        }
+        
+
+    </script>
+    
 </body>
-
 </html>
